@@ -1,0 +1,12 @@
+import "../css/styles.css";
+import Model from "./Model";
+
+export default function App() {
+  return (
+    <div className="App">
+      <Model />
+      <h1>Hello CodeSandbox</h1>
+      <h2>Start editing to see some magic happen!</h2>
+    </div>
+  );
+}

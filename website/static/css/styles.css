@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+    color: #ffffff;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    background: #222329;
+    background-image: linear-gradient(to top right, #1c1d22, #474a57);
+    position: relative;
+}
+
+.navbar {
+    padding: 20px 40px;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all 0.2s ease;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    color: transparent !important;
+}
+
+.navbar-nav .nav-link{
+    color: #c9c9c9 !important;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-brand:hover {
+    text-shadow: 0 0 2px rgb(204, 204, 204), 0 0 2px rgb(255, 253, 253);
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.navbar-right {
+    position: absolute;
+    right: 0%;
+    background: #808080;
+    padding: 6px 12px;
+    border-radius: 2px;
+}
+
+.navbar .btn:not(.navbar-brand) {
+    text-decoration: none;
+    color: #00ffa2;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 8px 13px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: none;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.navbar .btn:not(.navbar-brand):hover {
+    text-decoration: none;
+    background-color: rgba(0, 255, 162, 0.1);
+    transition: all 0.2s ease;
+}
+
+.btn-global-outline {
+    text-decoration: none;
+    color: #00ffa2;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 8px 13px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: none;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.btn-global-outline:hover {
+    text-decoration: none;
+    background-color: rgba(0, 255, 162, 0.1);
+    transition: all 0.2s ease;
+}
+
+/* About */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.about-card {
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 15px;
+    padding: 40px 50px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+    position: relative;
+    max-width: 1000px;
+    z-index: 1;
+}
+
+.about-card h2,
+.about-card h3 {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.about-card h2:hover,
+.about-card h3:hover {
+    background: linear-gradient(120deg, #00ffa2, #0099cc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.tech-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tech-card ul li {
+    margin-bottom: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    flex-wrap: nowrap;
+}
+
+.tech-card ul li h4 {
+    margin-right: 5px;
+}
+
+.tech-card ul li span {
+    margin: 0 5px;
+    margin-right: 0px;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.tech-card ul li span:hover {
+    color: #00ffa2;
+}
+
+.team-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.team-card ul li {
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.team-card ul li:hover {
+    color: #00ffa2;
+}
+
+
+/* Logon */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 25px
+}
+
+.glass-card h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h3.text-center {
+    margin-bottom: 25px;
+}
+
+.glass-card label {
+    color: #ffffff;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    backdrop-filter: blur(10px);
+    display:flex
+    
+}
+
+.form-control:focus {
+    outline: none;
+    color: #bdbdbd;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered {
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*landing*/
+
+.tennis-object {
+    display:flex;
+    margin-top: 15%;
+}
