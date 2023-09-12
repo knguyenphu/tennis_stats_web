@@ -1,7 +1,75 @@
 {% extends "base.html" %} {% block title %}landing{% endblock %} {% block content
-%}
-<!-----------------------
-<script class="tennis-object" type="module" src="https://unpkg.com/@splinetool/viewer@0.9.441/build/spline-viewer.js"></script>
-<spline-viewer url="https://prod.spline.design/0d0LkDVJz5JbkuHt/scene.splinecode"></spline-viewer>
------------------------>
+%} {% block navtitle %} {% endblock %}
+<style>
+    model-viewer {
+        height: 30vw;
+        width: 50vw;;
+        left: 38%;
+        top: 25%;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    h1 {
+        font-size: 13vw;
+        font-weight: 300;
+        line-height: 90%;
+    }
+
+    .text-group-main {
+        width: 100%;
+        margin: 0;
+        left: 18vw;
+        z-index:1;
+        left: 16%;
+    }
+    
+    .small-text-author {
+        padding-top:60%;
+    }
+
+    model-viewer, h1 {
+        display: flex;
+        position:absolute;
+    }
+    .plan-section,
+    .about-section {
+        width: 100%;
+        height: 100vh;
+    }
+    
+
+    
+</style>
+<div class="landing-page">
+    <div class="model-page">
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <model-viewer 
+        src="https://raw.githubusercontent.com/knguyenphu/tennis_stats_web/main/website/static/assets/Tennis%20Ball-1.gltf" 
+        camera-controls
+        environment-image=""
+        lighting="false"
+        disable-zoom
+        disable-pan
+        disable-drag
+        alt="racquet">
+        </model-viewer>
+    </div>
+    <div class="text-group-main">
+        <div class="large-text-left">
+            <h1><b><i>Tennis<br/>Stats<br/>Pro</i></b></h1>
+        </div>
+        <div class="small-text-author">
+            <p><i><br/>by - kyle nguyenphu</i></p>
+        </div>
+    </div>
+    <div class="about-section" id="about-section">
+        <h2 class = "about_" id="about_section">About</h2>
+        <p> A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
+
+            Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
+        </p>
+    </div>
+</div>
+
 {% endblock %}
