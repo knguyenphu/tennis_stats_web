@@ -21,3 +21,9 @@ python main.py
 ## Viewing The App
 
 Go to `http://127.0.0.1:5000`
+
+## Current State and roadmap
+
+- Create python web scrape script for tennis stats
+- fill in information for each section
+- add framer motion animation to website
